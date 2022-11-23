@@ -1,0 +1,766 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+html {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+body, ul {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+.d-flex{
+    display: flex;
+    align-items: center;
+}
+.d-flex-j{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    margin-top: -25px;
+}
+
+.desk-none{
+    display: none;
+}
+
+.mob-none{
+    display: block;
+}
+
+/*Header e Nav*/
+.top-header p{
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.top-header a[class='tel']{
+    background-image: url('../img/tel.png');
+    padding-left:19px;     
+}
+
+.top-header a[class='wsap']{
+    background-image: url('../img/ws.png');
+    padding-left:31px;
+}
+
+.top-header a{
+    background-repeat: no-repeat;
+    background-position: 0;
+    margin-left: 10px;
+    color: #FFB31A;      
+}
+
+.top-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    background-color: #03341C;
+}
+
+#header {
+    background-color: #006E3E;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    gap: 1.2rem;
+}
+
+#menu li{
+    border: 1px solid #ffb31a00;
+    border-radius: 5px;
+}
+
+#menu li:hover{
+    border: 1px solid #FFB31A;
+}
+
+#menu a {
+    display: block;
+    padding: 10px;
+    margin-left: 5px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;    
+}
+
+.logo {
+    max-width: 300px;
+}
+
+.logo img {
+    width: 80%;
+    padding: 20px 60px;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+.area-cliente a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 60px;
+}
+
+.area-cliente a p{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0 10px;    
+}
+
+/* Banner top */
+.banner-top{
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 80px;
+}
+
+.banner-content{
+    padding: 5% 15%;
+}
+
+.banner-content h1{
+    width: 600px;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 125%;
+    color: #3B454F;
+    padding-bottom: 200px;
+    margin: 0;
+}
+
+.banner-content p{
+    width: 350px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    padding-bottom: 110px;
+    margin: 0;    
+}
+
+.mob-flex{
+    display: block;
+}
+
+.btn-banner{
+    position: relative;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px 25px;
+    background-color: #33794A;
+    border-radius: 30px;
+    transition: .6s;
+}
+
+.btn-banner:hover{
+    background-color: #46a064;
+}
+
+.info1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 15%;
+}
+
+.info1-txt h2{
+    font-weight: 700;
+    font-size: 36px;
+    color: #3B454F;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 15px;
+}
+
+.info1-txt p{
+    font-weight: 400;
+    font-size: 18px;
+    color: #3B454F;
+    margin: 0;    
+}
+
+.info1-num, .info1-num1{
+    font-size: 38px;
+    font-weight: 700;
+    color: #83AF38;
+    padding-right: 5px;
+}
+
+.info1-num1{
+    padding-right: 10px;
+}
+
+.info1-txt-rodape{
+    padding: 20px 0px;
+}
+
+.info1-txt-rodape span{
+    font-weight: 600;
+    font-size: 19px;
+    color: #83AF38;    
+}
+
+.info1-img{
+    display: block;
+}
+.info1-img2{
+    display: none;
+}
+
+.btn-info1{
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px 25px;
+    background-color: #33794A;
+    border-radius: 30px;
+    transition: .6s;
+}
+
+.btn-info1:hover{
+    background-color: #46a064;
+}
+
+  .nossas-coberturas{
+    background-color: #F8F8F8;
+    padding: 50px 0px;
+  }
+
+  .nossas-coberturas h2{
+    text-align: center;
+    color: #3B454F;
+    font-weight: 700;
+    font-size: 36px;
+  }
+
+  .nossas-coberturas p{
+    text-align: center;
+    color: #3B454F;
+    font-weight: 400;
+    font-size: 20px;
+    padding-bottom: 30px;
+  }
+
+  .promo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .promo-block{
+    text-align: center;
+    background-color: #fff;
+    width: 320px;
+    height: 290px;
+    padding: 25px;
+    margin: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 9px 12px 1px rgba(0,0,0,0.17);
+    -moz-box-shadow: 0px 9px 12px 1px rgba(0,0,0,0.17);
+    box-shadow: 0px 9px 12px 1px rgba(0,0,0,0.17);
+    margin-bottom: 60px;
+  }
+
+  .promo-block h3{
+    font-weight: 700;
+    font-size: 20px;
+    color: #33794A;    
+  }
+
+  .promo-block p{
+    font-weight: 400;
+    font-size: 16px;
+    color: #737D86;
+    padding-bottom: 10px;
+  }
+
+  .promo-block a{
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    color:#03341C;
+    background-color: #9ee5a4;
+    transition: .6s;
+  }
+
+  .promo-block a:hover{
+    background-color: #cef1d1;
+  }
+
+  .seguro-de-vida{
+    padding: 30px 0px;
+  }
+
+  .seguro-de-vida h2{
+    font-weight: 700;
+    font-size: 40px;
+    color: #3B454F;
+    text-align: center;
+  }
+
+  .seguro-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1% 10%;
+  }
+
+  .seg-img{
+    display: block;
+  }
+
+  .seg-img-mob{
+    display: none;
+}
+
+  .accordeon{
+    width: 600px;
+    padding-bottom: 15px;
+  }
+
+  button.accordion {
+    background-image: url(../img/down.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    outline: none;
+    text-align: left;
+    padding: 15px 20px;
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+  }
+     
+  button.accordion:hover,
+  button.accordion.is-open {
+    background-color: rgb(255, 255, 255);    
+  }
+
+  button.accordion.is-open{
+    background-image: url(../img/up.png);
+  }
+  
+  .accordion-content {
+    background-color: white;
+    border-bottom: 1px solid whitesmoke;
+    border-top: 1px solid whitesmoke;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+  }
+
+  .ainda-nao-sabe{
+    background-image: url(../img/ns.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 630px;
+  }
+
+  .nss-titulo{
+    padding: 30px 10%;
+    width: 500px;
+  }  
+
+  .nss-titulo h2{
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    color: #3B454F;
+  }
+
+  .nss-txt{
+    float: right;
+    width: 500px;
+    margin-top: -170px;
+  }   
+  
+  .nss-txt h3{
+    font-weight: 700;
+    font-size: 20px;
+    color: #3B454F;
+    margin: 0;
+  }
+
+  .nss-txt p{
+    font-weight: 700;
+    font-size: 24px;
+    color: #83AF38;
+    padding-left: 10px;
+  }
+  
+  .tel-btn p{
+    margin: 0;
+    padding: 10px 0px;
+  }
+
+  .wsap2{
+    display: block;
+  }
+
+  .nss-txt a[class='wsap2']{
+    background-image: url('../img/ws.png');
+    background-repeat: no-repeat;
+    background-position: 10px;    
+    padding: 10px 20px;
+    padding-left:44px;
+    background-color: #006E3E;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 12px;
+    max-width: 270px;
+}
+
+.txt-bottom{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.txt-bottom p{
+    font-size: 14px;
+    margin: 0;
+}
+
+footer{
+    display: none;
+    padding: 10px 15px;
+}
+
+
+@media (max-width: 1560px) {
+    .info1 {
+        padding: 2% 10%;
+    }
+}
+@media (max-width: 1360px) {
+    #menu a {
+        font-size: 15px;
+    }
+    .area-cliente a p {
+        font-size: 15px;
+    }
+    .logo img {
+        width: 75%;
+    }
+    .info1 {
+        padding: 2% 5%;
+    }
+    .seguro-content {
+        padding: 1% 5%;
+    }
+    .nss-titulo h2 {
+        font-size: 30px;
+    }
+    .nss-txt h3, .tel-btn, .wsap2 {
+        margin-left: 50px;
+    }
+    .ainda-nao-sabe {
+        background-position-x: -100px;
+    }  
+}
+@media (max-width: 1220px) {
+    #menu a {
+        font-size: 13px;        
+    }
+    .area-cliente a p {
+        font-size: 13px;
+    }
+    .logo img {
+        width: 70%;
+    }
+    .info1 {
+        padding: 2% 1%;
+    }
+    .seguro-content {
+        padding: 1% 2%;
+    }
+    .seg-img img{
+        width: 85%;
+    }
+    .ainda-nao-sabe {
+        background-position-x: -350px;
+        background-size: 1900px;
+    }       
+}
+@media (max-width: 1130px) {
+    .logo {
+        max-width: 240px;
+    }
+    .logo img {
+        width: 55%;
+    }
+    .seg-img img{
+        width: 75%;
+    }      
+}
+
+/*Mobile*/
+@media (max-width: 962px) {
+    .ainda-nao-sabe {
+        background-position-x: 0px;
+        background-size: cover;
+    }    
+    .mob-none{
+        display: none;
+    }
+    .desk-none{
+        display: block;
+    }
+    #btn-mobile {
+        display: block;
+    }
+    .mob-flex{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0;
+        background-color: #006E3E;        
+        z-index: 1000;
+        transition: .6s;
+        height: 0;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    #nav.active #menu {
+        height: calc(100vh - 90px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+    #menu a{
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    #nav button{
+        color: white;
+        font-size: 15px;
+        font-weight: 600;
+        background-color: #00800000;
+        border: none;
+        padding: 0 20px;
+    }
+    .logo img {
+        width: 50%;
+        padding: 20px 30px;
+      }
+
+    .banner-top{
+        height: 500px;
+        background-size: 1500px;
+        background-position-x: -625px;
+        background-position-y: -200px;
+        padding: 0;
+    }  
+
+    .banner-content {
+        padding: 15px 20px;
+    }  
+      
+    .banner-content h1{
+        width: 320px;
+        font-size: 35px;
+        color: #3B454F;
+        padding: 0px 15px 30px 0px;
+    }
+    .banner-content p{
+        width: 320px;
+        font-size: 16px;
+        color: #fff;
+        padding-bottom: 300px;
+        margin: 0;    
+    }
+    .info1{
+        padding: 40px 20px;
+    }
+    .info1-txt h2 {
+        font-size: 25px;
+        color: #3B454F;
+        padding: 15px;
+    }
+    .info1-txt-rodape {
+        text-align: center;
+    }
+    .info1-img{
+        display: none;
+    }
+    .info1-img2{
+        display: block;
+    }
+    .info1-img2 img{
+        width: 350px;
+        padding-bottom: 40px;
+    }
+    .nossas-coberturas{
+        padding: 30px 15px;
+    }
+    .promo{
+        flex-direction: column;
+        padding: 15px;
+    }
+    .promo-block{
+        margin-bottom: 20px;
+        width: 95%;
+    }
+    .seguro-de-vida{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .seg-img{
+        display: none;
+    }
+    .seg-img-mob{
+        display: block;
+    }
+    .seg-img-mob img{
+        width: 90%;
+        padding: 0px 5px;
+    }
+    .ainda-nao-sabe{
+        background-image: url(../img/bot-mob.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 750px;
+    }
+    .nss-titulo {
+        padding: 30px 15px;
+        width: auto;
+        padding-bottom: 10px;
+    }
+    .nss-txt {
+        width: auto;
+        margin-top: 0;
+        text-align: center;
+        float: none;
+    }
+    .nss-txt h3 {
+        font-weight: 400;
+        font-size: 15px;
+        margin: 0;
+    }
+    .tel-btn{
+        margin: 0;
+        justify-content: center;
+    }
+    .nss-titulo h2{
+        font-size: 28px;
+        margin: 0;
+        padding-bottom: 10px;
+      }
+    .wsap2{
+        display: none;
+    }  
+    .txt-bottom{
+        position: relative;
+        text-align: center;
+        padding: 0px 15px;
+        bottom: 0;
+        right: 0;
+    }
+    .txt-bottom p{
+        font-size: 11px;
+        font-weight: 400;
+    }
+    
+    footer{
+        display: block;
+        padding: 10px 15px;
+    }
+
+    .foot-top{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .foot-bar{
+        margin-top: 20px;
+    }
+    
+    .foot-bar img{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    
+    .social{
+        padding: 20px 0px;
+    }
+
+    .vendas{
+        border-top: solid 1px rgba(0, 0, 0, 0.74);
+        border-bottom: solid 1px rgba(0, 0, 0, 0.74);
+    }
+    .vendas p{
+        font-size: 20px;
+    }
+    .btn-foot{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #387B4C;
+        padding: 10px 20px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+    .btn-email{
+        flex-direction: column;
+    }
+    .btn-foot p{
+        color: #fff;
+        font-size: 18px;
+        margin: 0;
+    } 
+    .accordeon2 {
+        padding: 20px 0px;
+    }
+    .accordeon2 button, .pagamento h3{
+        font-size: 16px;
+        font-weight: 700;
+        color: #435162;
+    }
+    .pagamento{
+        border-bottom: solid 1px rgba(0, 0, 0, 0.74);
+    }
+    .pagamento img{
+        width: 90%;
+    }
+    .pix img{
+        width: 150px;
+    }
+    .foot-bottom p{
+        text-align: left;
+        font-size: 14px;
+    }
+    .foot-bottom img{
+        width: 95%;
+    }
+}
